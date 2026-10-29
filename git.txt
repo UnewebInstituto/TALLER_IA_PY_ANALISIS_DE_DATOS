@@ -1,0 +1,7 @@
+echo "# TALLER_IA_PY_ANALISIS_DE_DATOS" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/UnewebInstituto/TALLER_IA_PY_ANALISIS_DE_DATOS.git
+git push -u origin main

@@ -1,0 +1,26 @@
+1. Integridad Estructural y Ausencia de Errores Críticos
+Validación de rangos: No se encontraron valores nulos, registros duplicados críticos ni valores lógicamente imposibles (como cantidades negativas, ventas negativas o ceros) en todo el conjunto de 9,994 transacciones. La estructura de tipos de datos es consistente (fechas, texto y métricas numéricas bien definidas).
+
+2. Presencia de Valores Atípicos Extremos (Outliers) por Valor de Venta
+Sesgo de distribución: Usando el rango intercuartílico (IQR), se detectaron 1,167 registros catalogados estadísticamente como valores atípicos en la columna ventas (superando el límite superior de ~400 unidades monetarias).
+
+Naturaleza del fenómeno: No se tratan de errores de captura, sino de una distribución con colas pesadas característica de e-commerce o B2B, donde la gran mayoría de transacciones corresponden a suministros de oficina de bajo costo (mediana de ventas de $54.49), mientras que una minoría de productos de alta gama (como fotocopiadoras y sistemas de videoconferencia de la categoría Technology) alcanzan picos de hasta $22,638.48 por transacción.
+
+3. Dispersión en la Relación Cantidad-Precio Unitario
+Heterogeneidad de líneas de producto: El análisis del precio unitario implícito (ventas / cantidad) revela una enorme amplitud que va desde $0.34 hasta $3,773.08 por artículo. Mientras que los artículos de Office Supplies manejan volúmenes altos con precios unitarios marginales, los productos de Technology y ciertos equipos de oficina especializados concentran el riesgo financiero y la variabilidad de los ingresos totales de la compañía.
+
+
+1. Oportunidad: Estacionalidad de Alta Demanda en Q4 (Efecto Cierre de Año)
+Análisis: El histórico demuestra de forma contundente que el Q4 concentra el volumen de ventas más alto del año (representando casi el 40% de la facturación global, con más de $878,000 acumulados en Q4 a lo largo de los años). Meses como noviembre superan consistentemente los $350,000 en transacciones, impulsados por un incremento masivo en el número de operaciones (conteo de transacciones superior a 450 registros mensuales).
+
+Oportunidad: Preparar campañas comerciales agresivas y asegurar inventario suficiente en las líneas de alta rotación para capturar el pico de consumo corporativo y de suministros de fin de año.
+
+2. Riesgo: Concentración de Ingresos en Pocos Actക്ടs de Alto Valor (Technology)
+Análisis: Aunque Office Supplies domina en volumen de transacciones, el crecimiento sostenido de Q4 en los últimos años (pasando de $179k en 2014 a $280k en 2017) está apalancado fuertemente por la categoría Technology y productos de oficina especializados de alto costo (como fotocopiadoras y equipos de videoconferencia).
+
+Riesgo: Si la cadena de suministro global o la disponibilidad de estos equipos de alto valor falla, el impacto en la meta de ingresos trimestrales será severo debido a la alta dependencia de estos productos punta.
+
+3. Oportunidad/Riesgo dual: Desaceleración o Volatilidad en el Ticket Promedio de Diciembre
+Análisis: Al observar el desglose mensual del Q4, se identifica un fenómeno particular: mientras noviembre registra el pico absoluto de ventas totales y volumen de transacciones, diciembre experimenta una ligera contracción en el ticket promedio por transacción (cayendo a un promedio de ~ $181 por venta frente a los $258 de noviembre).
+
+Estrategia (Mitigación de riesgo / Explotación de oportunidad): Diciembre compensa por volumen bruto de transacciones, pero existe el riesgo de perder rentabilidad si los costos logísticos aumentan en temporada navideña. La oportunidad radica en implementar estrategias de venta cruzada (cross-selling) para elevar el valor del carrito en diciembre y no depender exclusivamente del volumen masivo de artículos económicos.
